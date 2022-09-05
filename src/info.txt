@@ -1,0 +1,22 @@
+The graphs are of 2 types on the most upper defination :
+1) directed graph
+2) undirected graph
+
+The edges in the directed graph are only uni-directional . while in the undirected graph , all the vertices are bidirectional
+
+In undirected graph , we have the degree , which the number of ingoing or the outgoing edges in the graph
+The total of all the degrees is twice the number of edges in the case of the undirected graph
+
+In directed graph  , we have 2 types of degrees , this are indegree and outdegree
+Indegree is the total edges going inside the node
+Outdegree is the total edges going outside the node
+
+The path is the sequence of continuous nodes in which all the nodes appears only once .
+In the case of the directed graph , the path must have the nodes connected in one direction
+
+
+Cyclic graph is the graph which has the cycle in it .
+In the case of the directed graph , the cycle is seen through the nodes which have the edges in one direction and do not change direction
+If such a cycle is not present , then the graph in the case of directed graph is called as the acyclic graph .
+
+When the edges also has some weight associated with it , it is called as the weighted graph

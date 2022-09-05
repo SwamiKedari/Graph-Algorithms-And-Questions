@@ -1,0 +1,4 @@
+For checking whether the particular edge is a bridge or not , we use 2 arrays , one for the insertion time and the other for the lowest time
+
+Both of the insertion time and the lowest time will have the value equal to the timer++ while it is not visited , but the low time will be min of the value of the low of that node and the adjacent nodes
+

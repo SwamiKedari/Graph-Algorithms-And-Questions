@@ -1,0 +1,7 @@
+Articulation point is the point / node whose removal will break the graph into two different components
+
+The case for the articulation point checking is as follows :
+The low time of the adjacent is greater than or equal to the time of the node and the parent of the node must not be equal to -1 , then the point will be considered as the articulation point that is the removal of such a point will break the graph into 2 components
+
+Along with the condition mentioned above , we will also have to check the child of the parent nodes , and if the number of the children are greater than 1 , then in this case too , the node will be a articulation point
+

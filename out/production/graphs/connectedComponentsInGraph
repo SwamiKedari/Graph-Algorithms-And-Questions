@@ -1,0 +1,5 @@
+The components of the graph can be more than one even if they are not connected . The nodes that are not connected at all and are single are also called the components of the graph.
+for traversing the graph , we traverse each component separately . and this components are visited with a visited array which is marked true when the nodes are visited .
+
+The total number of components in the graph are equal to the total number of times the traversal enters the "if" statement inside the for loop of the traversal technique .
+

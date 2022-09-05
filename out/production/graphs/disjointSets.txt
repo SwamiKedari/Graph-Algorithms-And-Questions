@@ -1,0 +1,13 @@
+The disjoint sets are used to solve the problems like finding the component which a particular vertices belong to . This data structure is used to majorly perform 2 operations
+find parent and doing union of the two nodes
+
+The implementation of this data structure is done by the union of rank and path compression
+
+path compression means decreasing the path from the node to the main parent and directly connecting the node to the main parent
+
+union helps us identify whether which node is to connected to which node
+
+The time complexity of the both operations is found out to be o(constant)
+
+The space complexity will be o(v) as we are using the rank array for storing the elements
+

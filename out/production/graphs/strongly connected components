@@ -1,0 +1,12 @@
+The strongly connected components are the components which have the nodes placed in such a way that we can travel from any node to the other node in that node
+
+The strongly connected components are the components of the directed graph which satisfy such a type of property .
+
+Even the single nodes in the directed graph can be the strongly connected components if it is not possible to go to the other nodes from that node
+
+
+We get the strongly connected components of the graph using the kosaraju's algorithm :
+1) we first get the stack which contains the components in the topological sort manner , (topological sort using dfs)
+2) we will then change the directions of each node of the graph , that is , we will transpose the graph , this will make sure that the nodes are travelled only in the strongly connected graph in the dfs
+3) then we will perform the dfs and store the nodes in the arraylist which will have the strongly connected components together
+
