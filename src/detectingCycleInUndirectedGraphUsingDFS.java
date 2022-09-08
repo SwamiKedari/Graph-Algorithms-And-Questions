@@ -37,4 +37,8 @@ public class detectingCycleInUndirectedGraphUsingDFS {
         return false;
 
     }
+
+    // this approach is very similar to the detecting the cycle in the graph using the bfs just the traversal technique is changed and it is dfs now
+    // here also we are storing the previous element in the array and checking whether the adjacent element which is already visited is not the previously visited element
+
 }

@@ -35,7 +35,8 @@ public class topologicalSortingUsingBFS {
         while(!que.isEmpty()){
             int k=que.remove();
             visited[k]=true;
-            ans[size++]=k;
+            ans[size++]=k; // this line helps to fill the answer array which has all the array , if the graph is a directed and a cyclic graph , then the size variable will not have the value exactly equal to the number of vertices
+
             for(int i : adj.get(k)){
                 invert[i]--;
                 if(!visited[i] && invert[i]==0){

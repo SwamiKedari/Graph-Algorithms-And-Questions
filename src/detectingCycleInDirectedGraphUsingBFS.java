@@ -41,4 +41,6 @@ public class detectingCycleInDirectedGraphUsingBFS {
             return true;
         }
     }
+    // we use the kahn's algorithm to get the topological sort and we use the fact that the topological sort algorithm is only possible in the case of the directed acyclic graph and in the directed cyclic graph , the queue will not store all the nodes inside it and thus the size will not be equal to the value of v
+
 }

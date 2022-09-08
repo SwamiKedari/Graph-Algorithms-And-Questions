@@ -38,3 +38,6 @@ public class detectingCycleInUndirectedGraph {
         return false;
     }
 }
+
+// the approach involves using the previous array which stores the value of the previous element so that it does not show cycle from moving from this element to the previous element during the bfs traversal
+

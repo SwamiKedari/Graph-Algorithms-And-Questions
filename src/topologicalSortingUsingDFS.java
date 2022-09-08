@@ -45,5 +45,8 @@ public class topologicalSortingUsingDFS {
             st.push(i);
         }
     }
+    // the topological sort using the dfs algorithm is based on the fact that the node which has the less number of outvertices will be stored first and then the node which has the more number of vertices
+    // the algorithm is simple and just involves the pushing into the stack after the traversal
+
 
 }

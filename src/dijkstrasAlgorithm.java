@@ -84,5 +84,6 @@ class graphNode implements Comparator<graphNode>{
         return 0;
     }
 
+// this algorithm has all the things same as the shortest distance in the case of the undirected graph with unit weights but it uses the priority queue to ensure that the smallest values are removed first
 
 }

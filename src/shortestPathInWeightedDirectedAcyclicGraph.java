@@ -63,3 +63,6 @@ class pair{
         this.weight=weight;
     }
 }
+
+// we use the topogical sort in the case of the directed graph as it dont makes sense to traverse first to the node which is far and then node which come between the path
+

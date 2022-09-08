@@ -37,4 +37,8 @@ public class bipartiteGraphUsingDfs {
 
         return false;
     }
+    // the algorithm is similar to the bfs algorithm just the difference is of the traversal ,
+    // here also we have to traverse and mark the nodes as the different adjacent colors during the same and check if the adjacent node has the same color as the given node , if such a condition arrives then we can say that the graph is not a bipartite graph
+    // else it is the bipartite graph
+
 }

@@ -35,4 +35,6 @@ public class bipartiteGraph {
 
         return true;
     }
+    // the algorithm is simple and just involves the traversing using bfs , marking the nodes as different adjacent colors during the traversal and then checking if any node was previously traversed and still has the color equal to same color as the given node , then the graph is not a bipartited graph , else it is
+
 }
