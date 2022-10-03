@@ -24,14 +24,15 @@ public class detectingCycleInDirectedGraphUsingBFS {
         int size=0;
         while(!que.isEmpty()){
             int k=que.remove();
-            size++;
+            size++; // we check whether this while loop loops exactly v times as the number of total vertices are v
+            // in the case of a cyclic directed graph, this while loop will not be able to reach for every node and it will stop before all the nodes are completed
+            // this is because the topological sort order is not followed for the directed cyclic graph and is followed for the directed acyclic graph only ...
             for(int g : adj.get(k)){
                 inVertices[g]--;
                 if(inVertices[g]==0){
                     que.add(g);
                 }
             }
-
         }
 
         if(size==v){

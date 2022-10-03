@@ -12,7 +12,7 @@ public class dfs {
 
         ArrayList<Integer> arr=new ArrayList<>();
         boolean[] visited=new boolean[v];
-        for(int i=0;i<v;i++){
+        for(int i=0;i<v;i++){ // this for loop is for the non-connected components in the graph
             if(!visited[i]){
 
                 dfs(i,adj,arr,visited);
@@ -22,7 +22,7 @@ public class dfs {
         return arr;
     }
 
-    public void dfs(int i,ArrayList<ArrayList<Integer>> adj,ArrayList<Integer> arr,boolean[] visited){
+    public void dfs(int i,ArrayList<ArrayList<Integer>> adj,ArrayList<Integer> arr,boolean[] visited){ // do traversal to the next nodes from the given node and when one traversal for the adjacent node is complete, then move to the next component
         if(!visited[i]){
             visited[i]=true;
             arr.add(i);

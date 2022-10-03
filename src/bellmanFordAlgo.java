@@ -23,10 +23,10 @@ public class bellmanFordAlgo {
         arr.add(new gNode(3,2,6));
         arr.add(new gNode(5,3,1));
         arr.add(new gNode(1,5,-3));
-        arr.add(new gNode(3,4,-2));
+        arr.add(new gNode(3,4,-2)); // we created the graph over here
 
         int[] distance=new int[6];
-        Arrays.fill(distance,100000);
+        Arrays.fill(distance,100000); // distance array with infinite distance
 
         distance[0]=0; // we can change the index to any other index which is the source
 
@@ -38,6 +38,7 @@ public class bellmanFordAlgo {
                 }
             }
         }
+        // we update the weights v number of times* no of gnodes  where the v is the number of edges
 
         System.out.println(Arrays.toString(distance));
 
@@ -50,6 +51,11 @@ public class bellmanFordAlgo {
 
 
     }
+
+    /*
+    bellman ford algorithm is used for finding the distance in the directed graph with both the positive and negative edges
+
+     */
 
 
 }

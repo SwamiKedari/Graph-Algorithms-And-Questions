@@ -39,5 +39,7 @@ public class shortestDistanceInUndirectedGraph {
 
 
     }
+    // this algorithm is a simple algorithm where we keep on updating the distance from the previous node to get the shortest distance from the source node
+
 
 }

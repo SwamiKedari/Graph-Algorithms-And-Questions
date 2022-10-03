@@ -26,7 +26,7 @@ public class detectingCycleInUndirectedGraphUsingDFS {
                         return true;
                     }
                 }
-                else if(vis[j] && par!=j){
+                else if(vis[j] && par!=j){ // if the adjacent element was already visited and is also not the previous element , then there is the cycle for sure . ...
                     return true;
                 }
 

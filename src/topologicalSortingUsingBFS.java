@@ -9,6 +9,7 @@ public class topologicalSortingUsingBFS {
     do bfs using this nodes in the queue , during the bfs , reduce the counts of the invertices by 1
     add the node to the queue , which has the value equal to the zero
      */
+     // we should note here that the bfs traversal is valid only on the directed acyclic graph and not on the other types of graphs
 
     //Function to return list containing vertices in Topological order.
     static int[] topoSort(int v, ArrayList<ArrayList<Integer>> adj)
@@ -32,7 +33,8 @@ public class topologicalSortingUsingBFS {
             }
         }
 
-        while(!que.isEmpty()){
+        while(!que.isEmpty()){ // this while loop will be traversed exactly v times where v is the number of vertices in the graph , this is because the topo sort in the directed acyclic graph will cover each and every vertices in the graph
+
             int k=que.remove();
             visited[k]=true;
             ans[size++]=k; // this line helps to fill the answer array which has all the array , if the graph is a directed and a cyclic graph , then the size variable will not have the value exactly equal to the number of vertices

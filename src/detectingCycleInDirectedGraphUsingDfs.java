@@ -44,5 +44,9 @@ public class detectingCycleInDirectedGraphUsingDfs {
         }
     }
     // the logic behind using the dfsvisited array is that in this case , we erase the values of the dfsvisited back to false after the dfs traversal and still if we get that the next visited node is visited and its dfsvisited value is also true , this means that the node was previously visited during the same traversal which is possible in the case of the cycle and not the normal graph
-
+    /*
+    consider the graph  1->2 and the edges are 2->3 and 3->1, then the graph is an directed cyclic graph, in this case, we start the dfs from one of the node and start traversal, during the dfs, we will observe that when it reaches again that node then its value is true for both dfsvisited and visited , so it must be visited in the current traversal only which is possible only when the graph is cyclic and directed .
+                        | /
+                         3
+     */
 }

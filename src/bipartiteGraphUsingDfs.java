@@ -20,7 +20,8 @@ public class bipartiteGraphUsingDfs {
 
     public boolean dfs(ArrayList<ArrayList<Integer>> adj,int i,int col,int[] color){
         if(color[i]==0){
-            color[i]=Math.abs(3-col);
+            color[i]=Math.abs(3-col); // we are using the color of the previous element to determine the color of the current element which will be opposite of the previous color and then we are checking if the next element already has the color equal to same as the current element
+
             for(int k : adj.get(i)){
                 if(color[k]==0){
                     if(!dfs(adj,k,color[i],color)){

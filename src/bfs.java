@@ -13,7 +13,7 @@ public class bfs {
 
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
-        ArrayList<ArrayList<Integer>> a=new ArrayList<>();
+        ArrayList<ArrayList<Integer>> a=new ArrayList<>(); // creating the graph
         for(int i=0;i<=n;i++){
             a.add(new ArrayList<Integer>());
         }
@@ -30,7 +30,7 @@ public class bfs {
 
         boolean[] visited=new boolean[n+1];
 
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<=n;i++){ // this for loop is for the non-connected components in the graph
             if(visited[i]==false){
                 Queue<Integer> q=new LinkedList<>();
                 q.add(i);
@@ -38,7 +38,7 @@ public class bfs {
                 while(!q.isEmpty()){
                     int k=q.remove();
                     ar.add(k);
-                    for(int u : a.get(k)){
+                    for(int u : a.get(k)){ // traversing to all the adjacent elements from the given node and doing same for all the nodes
                         if(!visited[u]) {
                             visited[i] = true;
                             q.add(u);

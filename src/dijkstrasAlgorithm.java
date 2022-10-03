@@ -16,7 +16,7 @@ public class dijkstrasAlgorithm {
         int n=5;
         int[] dist=new int[n];
         Arrays.fill(dist,Integer.MAX_VALUE);
-        PriorityQueue<graphNode> que=new PriorityQueue<>(n,new graphNode());
+        PriorityQueue<graphNode> que=new PriorityQueue<>(n,new graphNode()); // we used the priority queue to make sure that the minimum weight node came out first and not the other one
         ArrayList<ArrayList<graphNode>> adj=new ArrayList<>();
         for(int i=0;i<n;i++){
             adj.add(new ArrayList<graphNode>());
@@ -42,7 +42,7 @@ public class dijkstrasAlgorithm {
         dist[0]=0;
 
         while(que.size() > 0){
-            graphNode a=que.remove();
+            graphNode a=que.remove(); // the rest of the algorithm is very similar to the finding of the shortest distance in the unweighted graph with unit weights
             for(graphNode it : adj.get(a.vertice)){
                 if(dist[a.vertice]+it.weight < dist[it.vertice]){
                     dist[it.vertice]=dist[a.vertice]+it.weight;
